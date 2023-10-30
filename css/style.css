@@ -99,10 +99,10 @@ h1{
     background-color: #DAF1F3;
     background-image: url(../image/1_レース1.png),
                     url(../image/1_レース2.png);
-    background-size: 60%,
-                    60%;
+    background-size: 50%,
+                    50%;
     background-repeat: no-repeat;
-    background-position: -75% -20%, 175% 120%;
+    background-position: -55% -10%, 155% 110%;
     text-align: center;
 }
 
@@ -123,6 +123,33 @@ h1{
     padding-top: 80px;
 }
 
+.w-box1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 28px;
+}
 
+.w-box2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.W-text{
+    padding-bottom: 50px;
+}
+
+.thumbnail-img{
+    height: 145px;
+}
+
+.w-name{
+    text-decoration: none;
+}
 
 /* Works（ポップアップ） */
