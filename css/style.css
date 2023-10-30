@@ -18,14 +18,13 @@ h2{
     background-color: #B6EE81;
 }
 
-
-img{
-    width: auto;
-    height: 55px;
+.g-navi-logo{
+    width: 207px;
+    height: auto;
     align-items: center;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 0.5%;
+    margin-left: 1%;
 }
 
 .g-navi ul{
@@ -51,6 +50,24 @@ img{
 }
 
 /* Top */
+
+.mv-wrapper{
+    padding: 120px;
+    background-color: #E5FFCC;
+    text-align : center
+}
+
+.m-logo{
+
+    width: 610px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.mv-text{
+    text-align: center;
+    color: #598C6B;
+}
 
 /* About */
 
