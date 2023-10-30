@@ -1,0 +1,58 @@
+
+/* 共通パーツ */
+
+h1{
+    font-family: 源暎ノンブル;
+    font-size: 40px;
+}
+
+h2{
+    font-family: はんなり明朝;
+    font-size: 40px;
+}
+
+/* header */
+.g-navi{
+    position: absolute;
+    width: 100%;
+    background-color: #B6EE81;
+}
+
+
+img{
+    width: auto;
+    height: 55px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0.5%;
+}
+
+.g-navi ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.g-navi ul li{
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.g-navi ul li a{
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Top */
+
+/* About */
+
+/* works */
+
+/* Works（ポップアップ） */

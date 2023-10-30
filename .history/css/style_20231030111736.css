@@ -1,0 +1,35 @@
+
+/* 共通パーツ */
+
+h1{
+    font-family: 源暎ノンブル;
+    font-size: 40px;
+}
+
+h2{
+    font-family: はんなり明朝;
+    font-size: 40px;
+}
+
+/* header */
+.g-navi{
+    position: absolute;
+    width: 100%;
+    background-color: #B6EE81;
+    color: #FFFFFF;
+}
+
+.g-navi ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: ;
+    align-items: ;
+}
+
+/* Top */
+
+/* About */
+
+/* works */
+
+/* Works（ポップアップ） */
