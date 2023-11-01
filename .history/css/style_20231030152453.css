@@ -1,0 +1,78 @@
+
+/* 共通パーツ */
+
+h1{
+    font-family: 源暎ノンブル;
+    font-size: 40px;
+}
+
+h2{
+    font-family: はんなり明朝;
+    font-size: 40px;
+}
+
+/* header */
+.g-navi{
+    width: 100%;
+    background-color: #B6EE81;
+}
+
+.nav-wrapper{
+    display: flex;
+}
+
+.g-navi-logo{
+    width: 207px;
+    height: auto;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+}
+
+.g-navi ul{
+    flex-wrap: nowrap;
+
+    align-items: center;
+    list-style: none;
+}
+
+.g-navi ul li{
+    flex-basis: 10%;
+    text-align: center;
+}
+
+.g-navi ul li a{
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 1%;
+}
+
+/* Top */
+
+.mv-wrapper{
+    padding: 120px;
+    background-color: #E5FFCC;
+    text-align : center
+}
+
+.m-logo{
+
+    width: 610px;
+    padding-top: 120px;
+    padding-bottom: 40px;
+}
+
+.mv-text{
+    text-align: center;
+    color: #598C6B;
+}
+
+/* About */
+
+/* works */
+
+/* Works（ポップアップ） */
