@@ -165,6 +165,11 @@ h2{
     display: none;
 }
 
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+
+}
+
 .modal-inner{
 
     background-color: #FFFFFF;
@@ -245,8 +250,9 @@ h2{
 /* フッダー　*/
 .copyright{
     background-color:#D6EEBF ;
-}
-
-.cp{
-    padding: 20px;
+    text-align: center;
+    padding-top: 69px;
+    padding-bottom:19px ;
+    color: #3E897A;
+    font-family: はんなり明朝;
 }
