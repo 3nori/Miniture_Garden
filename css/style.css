@@ -121,6 +121,7 @@ h1{
     color: #3E897A;
     text-align: center;
     padding-top: 80px;
+    padding-bottom: 115px;
 }
 
 .w-box1 {
@@ -153,3 +154,71 @@ h1{
 }
 
 /* Works（ポップアップ） */
+
+h2{
+
+}
+
+/* モーダル関係 */
+
+.modal-inner{
+
+    background-color: #FFFFFF;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inner-title{
+    padding-top:50px ;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.innner-content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main_img{
+    width:527px ;
+    height:auto ;
+    margin-left: 49px;
+}
+
+.sub-img{
+    display: block;
+    width: 94px;
+    height: auto;
+
+}
+.modal-inner img{
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.inner-title{
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.inner-text{
+    font-size: 16px;
+    width: 80%;
+    text-align:left;
+    margin-left: 63px;
+    padding: 0;
+}
+
+
+/* フッダー　*/
+.copyright{
+    background-color:#D6EEBF ;
+}
+
+.cp{
+    padding: 20px;
+}
