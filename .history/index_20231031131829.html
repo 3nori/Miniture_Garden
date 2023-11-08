@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miniture-Garden</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<!--ヘッダー-->
+<header>
+    <nav class="g-navi">
+        <div class="container nav-wrapper">
+            <div class="g-navi-logo">
+                <a href="#top"><img src="image/0_ロゴ_サイズ調整_メニューサイズ.png"></a>
+            </div>
+        <!--グローバルナビゲーションー-->
+                <ul>
+                    <li><a href="#top">Top</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#works">Works</a></li>
+                </ul>
+        </div>
+    </nav>
+
+</header>
+
+<!--Topー-->
+<section id="top">
+    <div class="container mv-wrapper">
+        <div class="mv-right">
+            <div class="main-logo">
+                <img class="m-logo" src="image/0_ロゴ_サイズ調整.png">
+            </div>
+            <div class="mv-text">
+                <p class="text">
+                    ここは、エンジニアSano.Mの
+                    <br>ポートフォリオサイトです
+                    <br>これまでに手掛けた制作物をまとめています
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Aboutー-->
+<section id="about">
+    <div class="container a-wrapper">
+        <div class="title">
+            <h1>About</h1>
+        </div>
+        <div class="A-text">
+            <p class="text">
+                神奈川県出身の新米エンジニア。<br>
+                大学ではメディア系の学部に通いながら声優を目指し<br>
+                大学卒業後は接客業に従事。その後IT業界に転職。<br>
+                現在Java Silver取得を目指してJavaを学習中<br>
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!--Worksー-->
+<section id="works">
+    <div class="container w-wrapper">
+        <div class="title">
+            <h1>Works</h1>
+        </div>
+        <div class="W-text">
+            <p class="text">
+                学習したことを基本に、作成した制作物
+            </p>
+        </div>
+        <!-- workのサムネ-->
+        <div class="w-box1">
+            <div class="thumbnail">
+                <a href="#" class="modalopen" date-target="modal01">
+                    <img class="thumbnail-img" src="./image/thumbnail/1_1_Mainview.png" alt="macaron">
+                    <p class="w-name">Webサイト「DAWNマカロン」</p>
+                </a>
+            </div>
+            <div class="thumbnail">
+                <a href="#" class="modalopen" date-target="modal02">
+                    <img class="thumbnail-img" src="./image/thumbnail/2_夜明け食堂1.png" alt="夜明け食堂~さば味噌~">
+                    <p class="w-name">予約ページ「夜明け食堂~さば味噌~」</p>
+                </a>
+            </div>
+            <div class="thumbnail">
+                <a href="#" class="modalopen" date-target="modal03">
+                    <img class="thumbnail-img" src="./image/thumbnail/3_1_list.png" alt="簡易ユーザー管理サイト">
+                    <p class="w-name">簡易ユーザー管理サイト</p>
+                </a>
+            </div>
+        </div>
+        <div class="w-box2">
+            <div class="thumbnail">
+                <a href="#" class="modalopen" date-target="modal04">
+                    <img class="thumbnail-img" src="./image/thumbnail/準備中.png" alt="簡易SNSシステム">
+                    <p class="w-name">簡易SNSシステム</p>
+                </a>
+            </div>
+            <div class="thumbnail">
+                <a href="#" class="modalopen" date-target="modal05">
+                    <img class="thumbnail-img" src="./image/thumbnail/5_1_Main.png" alt="Blooming Bear">
+                    <p class="w-name">ノーコードHP「Blooming Bear」</p>
+                </a>
+            </div>
+        </div>
+        <!-- モーダルの名前　-->
+        <div class="modal-main js-modal" id="modal01">
+            <div class="modal-container">
+                <div class="innner-content">
+                    <!--タイトル-->
+                    <h2 class="inner-title">-DAWNマカロン-</h2>
+                    <!--Main画像-->
+                    <div class="main_img"><img src="image/thumbnail/1_1_Mainview.png"></div>
+                    <!--説明文-->
+                    <div class="inner-text">
+                        担当：実装
+                        <br>
+                        DAWNのカリキュラムに沿って
+                        制作した1枚のランディングページです。初めての制作で、初めてjqueryを使用し、モーダル機能とタブ切り替えが正常に動作せずその原因が、同じく初めて使うメディアクエリの記述にモーダルの記述をしてしまったことがありました。初めての制作なのもあり、後から自分が見返して参考になるようにコメントアウトで何を記述したのか記載しました。
+
+                    </div>
+                    <!--リンク-->
+                    <!--サブ画像-->
+                    <div class="sub-img">
+                        <dl>
+                            <dt><img src="image/thumbnail/1_2_Feature.png"></dt>
+                            <dt><img src="image/thumbnail/1_3_Thought.png"></dt>
+                            <dt><img src="image/thumbnail/1_4_Macaron Life.png"></dt>
+                            <dt><img src="image/thumbnail/1_5_Line Up.png"></dt>
+                            <dt><img src="image/thumbnail/1_6_Package.png"></dt>
+                        </dl>
+                    </div>
+                    <!--使用言語-->
+                    <div class="ul-title">
+                        <h3>使用言語</h3>
+                    </div>
+                    <div class="used language">
+                        <p class="ul-text">
+                            HTML/CSS<br>
+                            jquery
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!--フッダー-->
+<footer>
+
+</footer>
+
+
+
+
+
+</body>
+</html>

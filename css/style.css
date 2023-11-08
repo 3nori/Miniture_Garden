@@ -161,15 +161,15 @@ h2{
 
 }
 
-/* モーダル関係 */
+/* モーダル関係 
 
 .modal-main{
     display: none;
-}
+}*/
 
 /*モーダル本体の指定 + モーダル外側の背景の指定*/
 
-.modal-inner{
+.modal-container{
     position: fixed;
     top:0;
     left:0;
@@ -185,22 +185,23 @@ h2{
     box-sizing: border-box;
 }
 
-.modal-inner:before{
+.modal-container:before{
     content: "";
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
-.modal-inner.active{
+.modal-container.active{
     opacity: 1;
     visibility: visible;
 }
 
-.modal-container{
+.modal-body{
 
     position: relative;
     z-index: 10;
+    display: inline-block;
     background-color: #FFFFFF;
     max-width: 1024px;
     margin-left: auto;
@@ -213,7 +214,7 @@ h2{
     text-align: center;
 }
 
-.inner-content{
+.modal-body{
     display: flex;
     flex-wrap: nowrap;
 }
@@ -246,7 +247,7 @@ h2{
     margin-bottom: 19px;
 }
 
-.modal-inner img{
+.modal-container img{
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
