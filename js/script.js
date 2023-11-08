@@ -11,7 +11,7 @@ $(function(){
 	});
 
     $(document).on('click',function(e){
-        if(!$(e.target).closets('.modal-body').length){
+        if(!$(e.target).closest('.modal-body').length){
             container.removeClass('active');
         }
     });

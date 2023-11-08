@@ -161,11 +161,11 @@ h2{
 
 }
 
-/* モーダル関係 
+/* モーダル関係 */
 
 .modal-main{
     display: none;
-}*/
+}
 
 /*モーダル本体の指定 + モーダル外側の背景の指定*/
 
@@ -212,11 +212,6 @@ h2{
     padding-top:50px ;
     margin-bottom: 26px;
     text-align: center;
-}
-
-.modal-body{
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 .main_img{
