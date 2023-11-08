@@ -165,7 +165,7 @@ h2{
     display: none;
 }
 
-.modal-inner{ /* モーダル背景を画面いっぱいに設定し、位置を固定 */
+.modal-container{ /* モーダル背景を画面いっぱいに設定し、位置を固定 */
     overflow: scroll;
     display: flex;
     justify-content: center;

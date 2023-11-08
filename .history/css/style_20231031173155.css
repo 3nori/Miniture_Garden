@@ -165,7 +165,7 @@ h2{
     display: none;
 }
 
-.modal-inner{ /* モーダル */
+.modal-container{ /* モーダル */
     overflow: scroll;
     display: flex;
     justify-content: center;
