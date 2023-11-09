@@ -161,116 +161,15 @@ h2{
 
 }
 
-/* モーダル関係 */
+/* モーダル関係
 
 .modal-main{
     display: none;
-}
+}*/
 
 /*モーダル本体の指定 + モーダル外側の背景の指定*/
 
-.modal-container{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    background: rgba(0,0,0,50%);
-    padding: 40px 20px;
-    overflow: auto;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-    box-sizing: border-box;
-}
 
-.modal-container:before{
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
-.modal-container.active{
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal-body{
-
-    position: relative;
-    z-index: 10;
-    display: inline-block;
-    background-color: #FFFFFF;
-    max-width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.inner-title{
-    padding-top:50px ;
-    margin-bottom: 26px;
-    text-align: center;
-}
-
-.main_img{
-    width:527px ;
-    height:auto ;
-    margin-left: 49px;
-}
-
-.sub-img{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    margin-left: 40px;
-    max-width: 527px;
-    width: 94px;
-    height: 94px;
-    object-fit: cover;
-}
-
-
-.github-link{
-    margin-top: 16px;
-    margin-bottom: 34px;
-}
-
-.ul-title{
-    font-size: 25px;
-    margin-bottom: 19px;
-}
-
-.modal-container img{
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-    margin-right: 18px;
-}
-
-.inner-title{
-    margin-top: 40px;
-    margin-bottom: 32px;
-    font-size: 28px;
-    font-weight: bold;
-    margin-left: 182px;
-    margin-right: 485px;
-
-}
-
-.inner-text{
-    font-size: 14px;
-    width: 48%;
-    text-align:left;
-    margin-left: 63px;
-    padding: 0;
-}
-
-.used-language{
-    margin-bottom: 51px;
-    font-size: 14px;
-}
 
 
 

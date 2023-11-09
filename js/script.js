@@ -1,7 +1,7 @@
 //モーダル
 $(function(){
 	// 変数に要素を入れる
-	var open = $('.modal-open'),
+	var open = $('.modalopen'),
 		container = $('.modal-container');
 
 	//開くボタンをクリックしたらモーダルを表示する
