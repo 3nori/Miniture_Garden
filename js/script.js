@@ -1,7 +1,6 @@
-//モーダル
 $(function(){
 	// 変数に要素を入れる
-	var open = $('.modalopen'),
+	var open = $('.modal-open'),
 		container = $('.modal-container');
 
 	//開くボタンをクリックしたらモーダルを表示する
@@ -10,12 +9,12 @@ $(function(){
 		return false;
 	});
 
-    $(document).on('click',function(e){
-        if(!$(e.target).closest('.modal-body').length){
-            container.removeClass('active');
-        }
-    });
-
+	//モーダルの外側をクリックしたらモーダルを閉じる
+	$(document).on('click',function(e) {
+		if(!$(e.target).closest('.modal-body').length) {
+			container.removeClass('active');
+		}
+	});
 });
 
 
