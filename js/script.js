@@ -28,7 +28,7 @@ $(function()
 		$(".sub").removeClass("select");
 		$(this).parent().addClass("select");
 
-		$(".main_img").fadeOut(500, function()
+		$(".main").fadeOut(500, function()
 		{
 			$(this).attr("src", img),
 			$(this).fadeIn(500)

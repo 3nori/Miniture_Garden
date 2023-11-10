@@ -173,7 +173,6 @@ h2{
     width: 100%;
 }
 
-
 .modal-container{
     background: rgba(0,0,0,0.8);
     height: 100vh;
@@ -181,16 +180,82 @@ h2{
     width: 100%;
     }
 
-
 .modal-body{
     background: #fff;
     left: 50%;
-    padding: 40px;
-    position: absolute;
+    position: fixed;
     top: 50%;
     transform: translate(-50%,-50%);
-    width: 60%;
+    width: 100%;
+    max-width: 1024px;
     }
+
+.inner-title{
+    padding-top:50px ;
+    margin-bottom: 26px;
+    text-align: center;
+}
+
+.modal-content{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.main{
+    width: 527px;
+    height:auto ;
+    margin-left: 49px;
+    margin-bottom: 30px;
+
+}
+
+.sub-img{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    object-fit: cover;
+}
+
+.sub{
+    margin-left: 40px;
+    margin-bottom: 71px;
+    max-width: 527px;
+    width: 94px;
+    height: 94px;
+    }
+
+.inner-title{
+    margin-top: 40px;
+    margin-bottom: 32px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: 182px;
+    margin-right: 485px;
+    }
+
+.inner-text{
+    font-size: 14px;
+    width: 210px;
+    text-align:left;
+    margin-left: 63px;
+    padding: 0;
+    }
+
+.github-link{
+    margin-top: 16px;
+    margin-bottom: 34px;
+}
+
+.ul-title{
+    font-size: 25px;
+
+}
+
+.used-language{
+    margin-top: 19px;
+    margin-bottom: 51px;
+    font-size: 14px;
+}
 
 
 /* フッダー　*/
