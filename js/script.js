@@ -1,21 +1,20 @@
 $(function(){
-	// 変数に要素を入れる
-	var open = $('.modal-open'),
-		container = $('.modal-container');
-
-	//開くボタンをクリックしたらモーダルを表示する
-	open.on('click',function(){
-		container.addClass('active');
-		return false;
-	});
-
-	//モーダルの外側をクリックしたらモーダルを閉じる
-	$(document).on('click',function(e) {
-		if(!$(e.target).closest('.modal-body').length) {
-			container.removeClass('active');
-		}
-	});
+	//
+    $('.modal-open').each(function(){
+        $(this).on('click',function(){
+    var target = $(this).data('target');
+    var modal = document.getElementById(target);
+    $(modal).fadeIn();
+    return false;
+    });
 });
+	//暗いところクリックでモーダルが閉じる
+    $('.modal-close').on('click',function(){
+    $('.modal-main').fadeOut();
+    return false;
+    });
+});
+
 
 
 //画像切り替え
