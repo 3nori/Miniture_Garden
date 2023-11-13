@@ -18,20 +18,23 @@ $(function(){
 
 
 //画像切り替え
-$(function()
-{
-	$(".sub").eq(0).addClass("select");
-	$(".sub-img").click(function()
-	{
-		var img = $(this).attr("src");
+$(function(){
+	$('.subItem img').click(function(){
+		// サムネイルの取得
+		let $thisImg = $(this).attr('src');
+		let $this2xImg = $(this).attr('srcset');
+		let $thisAlt = $(this).attr('alt');
 
-		$(".sub").removeClass("select");
-		$(this).parent().addClass("select");
+		// メインイメージの取得
+		let $mainImg = $(".mainItem img").attr('src');
+		let $main2xImg = $(".mainItem img").attr('srcset');
+		let $mainAlt = $(".mainItem img").attr('alt');
 
-		$(".main").fadeOut(500, function()
-		{
-			$(this).attr("src", img),
-			$(this).fadeIn(500)
-		});
+		// メインイメージを一度非表示にする（アニメーション付与のため）
+		$('.mainItem img').hide();
+
+		// メインイメージとサムネイルを切り替える
+		$('.mainItem img').attr({srcset:$this2xImg,src:$thisImg,alt:$thisAlt}).fadeIn(500);
+		$(this).attr({srcset:$main2xImg,src:$mainImg,alt:$mainAlt});
 	});
 });
