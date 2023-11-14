@@ -201,7 +201,7 @@ h2{
     flex-wrap: nowrap;
 }
 
-.main{
+.mainImage img{
     width: 527px;
     height:auto ;
     margin-left: 49px;
@@ -209,14 +209,7 @@ h2{
 
 }
 
-.sub-img{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    object-fit: cover;
-}
-
-.sub{
+.thumbnails img{
     margin-left: 40px;
     margin-bottom: 71px;
     max-width: 527px;
@@ -255,6 +248,26 @@ h2{
     margin-top: 19px;
     margin-bottom: 51px;
     font-size: 14px;
+}
+
+/* コピペ */
+
+
+.thumbnails {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: distribute;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 30px auto 0;
+}
+
+.thumbnails img:hover {
+    opacity: 0.8;
+    transition: all .3s;
 }
 
 
