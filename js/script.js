@@ -38,3 +38,10 @@ $(function(){
 		$(this).attr({srcset:$main2xImg,src:$mainImg,alt:$mainAlt});
 	});
 });
+
+//モーダル消えたら画像切り替え初期化
+$(function(){
+	$('.modal-close').on('click',function(){
+		$('.mainItem img').removeAttr({srcset:$main2xImg,src:$mainImg,alt:$mainAlt});
+	});
+});
