@@ -17,49 +17,23 @@ $(function () {
 });
 
 
-
-//画像切り替え
+//画像切り替え 1つ増やす
 $(function () {
-	$('.subItem1 img').click(function () {
-		// サムネイルの取得
-		let $thisImg = $(this).attr('src');
-		let $this2xImg = $(this).attr('srcset');
-		let $thisAlt = $(this).attr('alt');
-
-		// メインイメージの取得
-		let $mainImg = $(".mainItem1 img").attr('src');
-		let $main2xImg = $(".mainItem1 img").attr('srcset');
-		let $mainAlt = $(".mainItem1 img").attr('alt');
-
-		// メインイメージを一度非表示にする（アニメーション付与のため）
-		$('.mainItem1 img').hide();
-
-		// メインイメージとサムネイルを切り替える
-		$('.mainItem1 img').attr({ srcset: $this2xImg, src: $thisImg, alt: $thisAlt }).fadeIn(500);
-		$(this).attr({ srcset: $main2xImg, src: $mainImg, alt: $mainAlt });
+	$('.subItem img').on('click', function () {
+		//mainに切り替えるimgのsrc取得
+		img = $(this).attr('src');
+		//currentクラス付け替え
+		$('.subItem li').removeClass('current');
+		$(this).parent().addClass('current');
+		//fadeOutできたらsrc変更してfadeIn
+		$('.mainItem img').fadeOut(50, function () {
+			$('.mainItem img').attr('src', img).on('load', function () {
+				$(this).fadeIn();
+			})
+		})
 	});
 });
 
-$(function () {
-	$('.subItem2 img').click(function () {
-		// サムネイルの取得
-		let $thisImg = $(this).attr('src');
-		let $this2xImg = $(this).attr('srcset');
-		let $thisAlt = $(this).attr('alt');
-
-		// メインイメージの取得
-		let $mainImg = $(".mainItem2 img").attr('src');
-		let $main2xImg = $(".mainItem2 img").attr('srcset');
-		let $mainAlt = $(".mainItem2 img").attr('alt');
-
-		// メインイメージを一度非表示にする（アニメーション付与のため）
-		$('.mainItem2 img').hide();
-
-		// メインイメージとサムネイルを切り替える
-		$('.mainItem2 img').attr({ srcset: $this2xImg, src: $thisImg, alt: $thisAlt }).fadeIn(500);
-		$(this).attr({ srcset: $main2xImg, src: $mainImg, alt: $mainAlt });
-	});
-});
 
 /*
 //画像切り替え 書き換え前
