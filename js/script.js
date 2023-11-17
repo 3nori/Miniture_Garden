@@ -12,6 +12,8 @@ $(function () {
 	//暗いところクリックでモーダルが閉じる
 	$('.modal-close').on('click', function () {
 		$('.modal-main').fadeOut();
+		//クリックしたタイミングでリロードする（F5キー押せば解決したため）
+		location.reload();
 		return false;
 	});
 });
@@ -31,8 +33,17 @@ $(function () {
 				$(this).fadeIn();
 			})
 		})
+
 	});
 });
+
+/*　失敗したコード
+
+		//1.モーダルが閉じた時にcurrentクラスを外す
+		$('.modal-close').on('click', function () {
+			$('.subItem li').removeClass('current');
+		});
+*/
 
 
 /*
